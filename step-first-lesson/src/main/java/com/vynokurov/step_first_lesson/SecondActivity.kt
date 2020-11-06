@@ -3,6 +3,7 @@ package com.vynokurov.step_first_lesson
 import android.os.Bundle
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import kotlinx.android.synthetic.main.activity_second.*
 
 class SecondActivity : AppCompatActivity() {
 
@@ -14,9 +15,7 @@ class SecondActivity : AppCompatActivity() {
         val intentInt = intent.getIntExtra(TRANSMITTED_INT, 0)
         val intentBoolean = intent.getBooleanArrayExtra(TRANSMITTED_BOOLEAN)
 
-        val textInform: TextView = this.findViewById(R.id.textViewInform)
-
-        textInform.text = getString(R.string.text_info, intentString, intentInt.toString(), intentBoolean)
+        textViewInform.text = getString(R.string.text_info, intentString, intentInt.toString(), intentBoolean)
     }
 
     companion object {

@@ -35,6 +35,7 @@ android {
 
 dependencies {
 
+    implementation project(":step-first-lesson")
     //kt
     implementation kotlin.kotlinCore
     implementation kotlin.coroutines
