@@ -1,0 +1,82 @@
+ext {
+    configVersions = [
+            compileSdk : 30,
+            minSdk     : 24,
+            targetSdk  : 30,
+            versionCode: 3
+    ]
+
+    versions = [
+            kt             : "1.4.10",
+            ktCoroutines   : "1.1.1",
+            ktx            : "1.3.1",
+            lifecycle      : "2.2.0",
+            dagger         : '2.29.1',
+            leakCanary     : "2.0-beta-3",
+            gson           : "2.8.6",
+            appCompat      : "1.2.0",
+            constrainLayout: '2.0.1',
+            barcode        : '3.4.1',
+            activityKtx    : "1.2.0-alpha08",
+            fragmentKtx    : "1.3.0-alpha08",
+            swipeToRefresh : "1.1.0",
+            material       : '1.2.1',
+            analytics      : "17.5.0",
+            crashlytics    : "17.2.1",
+            jtds           : "1.3.1",
+            threetenabp    : "1.2.4",
+            timber         : "4.7.1",
+            room           : "2.2.5",
+            signature      : "1.2.1",
+            scanner        : "7.0.0",
+    ]
+
+    androidx = [
+            coreKtx            : "androidx.core:core-ktx:${versions.ktx}",
+            appCompat          : "androidx.appcompat:appcompat:${versions.appCompat}",
+            activityKtx        : "androidx.activity:activity-ktx:${versions.activityKtx}",
+            fragmentKtx        : "androidx.fragment:fragment-ktx:${versions.fragmentKtx}",
+            constrainLayout    : "androidx.constraintlayout:constraintlayout:${versions.constrainLayout}",
+            swipeToRefresh     : "androidx.swiperefreshlayout:swiperefreshlayout:${versions.swipeToRefresh}",
+            lifecycleExtensions: "androidx.lifecycle:lifecycle-extensions:${versions.lifecycle}",
+            lifecycleCommon    : "androidx.lifecycle:lifecycle-common-java8:${versions.lifecycle}",
+            viewmodelKtx       : "androidx.lifecycle:lifecycle-viewmodel-ktx:${versions.lifecycle}",
+            livedataKtx        : "androidx.lifecycle:lifecycle-livedata-ktx:${versions.lifecycle}",
+            roomRuntime        : "androidx.room:room-runtime:${versions.room}",
+            roomKtx            : "androidx.room:room-ktx:${versions.room}",
+            roomCompiler       : "androidx.room:room-compiler:${versions.room}"
+    ]
+
+    kotlin = [
+            kotlinCore       : "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${versions.kt}",
+            coroutines       : "org.jetbrains.kotlinx:kotlinx-coroutines-core:${versions.ktCoroutines}",
+            coroutinesAndroid: "org.jetbrains.kotlinx:kotlinx-coroutines-android:${versions.ktCoroutines}"
+    ]
+
+    google = [
+            material              : "com.google.android.material:material:${versions.material}",
+            daggerAndroid         : "com.google.dagger:dagger-android:${versions.dagger}",
+            daggerAndroidSupport  : "com.google.dagger:dagger-android-support:${versions.dagger}",
+            daggerCompiler        : "com.google.dagger:dagger-compiler:${versions.dagger}",
+            daggerAndroidProcessor: "com.google.dagger:dagger-android-processor:${versions.dagger}",
+            gson                  : "com.google.code.gson:gson:${versions.gson}",
+            zxingBarcode          : "com.google.zxing:core:${versions.barcode}"
+    ]
+
+    firebase = [
+            analytics  : "com.google.firebase:firebase-analytics-ktx:${versions.analytics}",
+            crashlytics: "com.google.firebase:firebase-crashlytics-ktx:${versions.crashlytics}"
+    ]
+
+    others = [
+            threetenabp      : "com.jakewharton.threetenabp:threetenabp:${versions.threetenabp}",
+            leakcanaryAndroid: "com.squareup.leakcanary:leakcanary-android:${versions.leakCanary}",
+            timber           : "com.jakewharton.timber:timber:${versions.timber}",
+            signature        : "com.github.gcacace:signature-pad:${versions.signature}",
+            scanner          : "com.symbol:emdk:${versions.scanner}"
+    ]
+
+    jtdsConnetion = [
+            jtdsConnetion: "net.sourceforge.jtds:jtds:${versions.jtds}"
+    ]
+}

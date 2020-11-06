@@ -1,7 +1,7 @@
-apply plugin: 'com.android.application'
+apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
-apply plugin: 'kotlin-kapt'
 apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
 apply from: '../dependencies.gradle'
 
 android {
@@ -9,13 +9,13 @@ android {
     buildToolsVersion "29.0.3"
 
     defaultConfig {
-        applicationId "com.vynokurov.homemainactivity"
         minSdkVersion configVersions.minSdk
         targetSdkVersion configVersions.targetSdk
         versionCode configVersions.versionCode
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
     }
 
     buildTypes {
@@ -46,5 +46,6 @@ dependencies {
     implementation androidx.activityKtx
     implementation androidx.fragmentKtx
     implementation androidx.constrainLayout
+    implementation google.material
 
 }
