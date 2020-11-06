@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+   <string name="hello_land_world">Привет Android Academy!</string>
+    <string name="hello_second_activity">Привет Second Activity</string>
+    <string name="text_info">Эти данные были посланы из предыдущего экрана: transmittedString: %s,
+                transmittedInt: %s, transmittedBoolean: %s</string>
+
+</resources>

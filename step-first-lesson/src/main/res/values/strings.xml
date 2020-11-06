@@ -1,0 +1,6 @@
+<resources>
+   <string name="hello_land_world">Hello Android Academy!</string>
+    <string name="hello_second_activity">Hello Second Activity</string>
+    <string name="text_info">These values were passed from previous screen: transmittedString: %s,
+                transmittedInt: %s, transmittedBoolean: %s</string>
+</resources>
