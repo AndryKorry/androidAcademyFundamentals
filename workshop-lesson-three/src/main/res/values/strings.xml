@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="this_is_my_first_button">This is my first button</string>
+    <string name="this_first_textview">this isn`t my first\n textview</string>
+    <string name="hint_mail_mail_com">mail@mail.com</string>
+</resources>
