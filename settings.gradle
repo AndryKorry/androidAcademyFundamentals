@@ -1,3 +1,4 @@
+include ':workshop-lesson-three'
 include ':step-first-lesson',
         ':app'
 rootProject.name = "HomeMainActivity"
