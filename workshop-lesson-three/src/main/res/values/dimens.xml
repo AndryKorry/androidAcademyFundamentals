@@ -19,6 +19,7 @@
     <dimen name="solution_three_title_height">64dp</dimen>
     <dimen name="size_64dp">64dp</dimen>
     <dimen name="size_96dp">96dp</dimen>
+    <dimen name="size_8dp">8dp</dimen>
     <!-- SolutionThreeScreen -->
 
 </resources>

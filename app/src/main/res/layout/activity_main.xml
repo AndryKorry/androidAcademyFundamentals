@@ -16,4 +16,14 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <Button
+        android:id="@+id/openSecondLesson"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/second_lesson"
+        android:layout_margin="@dimen/common_16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lessonFirst" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

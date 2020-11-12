@@ -1,5 +1,6 @@
 package com.vynokurov.step_first_lesson
 
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.widget.TextView
@@ -22,8 +23,14 @@ class FirstStepActivity : AppCompatActivity() {
     }
 
     companion object {
+
+        @JvmStatic
+        fun newIntent(context: Context): Intent =
+            Intent(context, FirstStepActivity::class.java)
+
         const val TRANSMITTED_STRING = "transmittedString"
         const val TRANSMITTED_INT = "transmittedInt"
         const val TRANSMITTED_BOOLEAN = "transmittedBoolean"
     }
+
 }

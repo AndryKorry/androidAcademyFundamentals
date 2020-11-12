@@ -1,9 +1,10 @@
 package com.vynokurov.homemainactivity
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import com.vynokurov.step_first_lesson.FirstStepActivity
+import com.vynokurov.workshop_lesson_three.LessonThreeActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -11,11 +12,13 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        lessonFirst.setOnClickListener { openNextScreen() }
-    }
+        lessonFirst.setOnClickListener {
+            startActivity(FirstStepActivity.newIntent(this))
 
-    private fun openNextScreen() {
-        val intent = Intent(this, FirstStepActivity::class.java)
-        startActivity(intent)
+        }
+        openSecondLesson.setOnClickListener {
+            startActivity(LessonThreeActivity.newIntent(this))
+        }
+
     }
 }
