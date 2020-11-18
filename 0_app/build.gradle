@@ -37,6 +37,7 @@ dependencies {
 
     implementation project(':02_workshop-lesson-second')
     implementation project(':03_workshop-lesson-three')
+    implementation project(':03_homework-lesson-three')
     //kt
     implementation kotlin.kotlinCore
     implementation kotlin.coroutines
