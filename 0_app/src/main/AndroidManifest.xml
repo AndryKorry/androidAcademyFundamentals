@@ -19,6 +19,7 @@
         <activity android:name="com.vynokurov.step_first_lesson.FirstStepActivity"/>
         <activity android:name="com.vynokurov.step_first_lesson.SecondActivity"/>
         <activity android:name="com.vynokurov.workshop_lesson_three.LessonThreeActivity"/>
+        <activity android:name="com.vynokurov.homework_lesson_three.MovieDetailsActivity"/>
     </application>
 
 </manifest>
