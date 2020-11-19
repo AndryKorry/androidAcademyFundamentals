@@ -2,4 +2,4 @@ include ':03_homework-lesson-three'
 include ':03_workshop-lesson-three'
 include ':02_workshop-lesson-second',
         ':0_app'
-rootProject.name = "HomeMainActivity"
+rootProject.name = "BasicAndroidAcademy"

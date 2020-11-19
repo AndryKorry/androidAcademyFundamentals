@@ -1,6 +1,5 @@
-package com.vynokurov.homemainactivity
+package com.vynokurov.academyBasic
 
-import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.vynokurov.step_first_lesson.FirstStepActivity

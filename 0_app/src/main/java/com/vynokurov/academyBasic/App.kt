@@ -1,4 +1,4 @@
-package com.vynokurov.homemainactivity
+package com.vynokurov.academyBasic
 
 import android.app.Application
 
