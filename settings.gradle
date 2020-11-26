@@ -1,5 +1,6 @@
-include ':03_homework-lesson-three'
-include ':03_workshop-lesson-three'
-include ':02_workshop-lesson-second',
-        ':0_app'
+include ':0_app',
+        ':02_workshop-lesson-second',
+        ':03_workshop-lesson-three',
+        ':03_homework-lesson-three',
+        ':04_homework'
 rootProject.name = "BasicAndroidAcademy"

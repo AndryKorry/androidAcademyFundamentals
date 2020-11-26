@@ -3,7 +3,6 @@ buildscript {
     apply from: 'dependencies.gradle'
     ext {
         versions.kt = '1.4.10'
-        versions.kt = '1.4.10'
     }
 
     repositories {
