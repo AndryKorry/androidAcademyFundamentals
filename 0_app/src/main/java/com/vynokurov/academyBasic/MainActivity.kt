@@ -2,6 +2,7 @@ package com.vynokurov.academyBasic
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.vynokurov.a0_movie_app.MainMovieActivity
 import com.vynokurov.step_first_lesson.FirstStepActivity
 import com.vynokurov.workshop_lesson_three.LessonThreeActivity
 import kotlinx.android.synthetic.main.activity_main.*
@@ -17,6 +18,10 @@ class MainActivity : AppCompatActivity() {
         }
         openSecondLesson.setOnClickListener {
             startActivity(LessonThreeActivity.newIntent(this))
+        }
+
+        movieApp.setOnClickListener {
+            startActivity(MainMovieActivity.newIntent(this))
         }
 
     }

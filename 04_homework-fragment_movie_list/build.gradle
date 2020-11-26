@@ -5,13 +5,13 @@ apply plugin: 'kotlin-kapt'
 apply from: '../dependencies.gradle'
 
 android {
-    compileSdkVersion 30
-    buildToolsVersion "30.0.2"
+    compileSdkVersion configVersions.compileSdk
+    buildToolsVersion "29.0.3"
 
     defaultConfig {
-        minSdkVersion 25
-        targetSdkVersion 30
-        versionCode 1
+        minSdkVersion configVersions.minSdk
+        targetSdkVersion configVersions.targetSdk
+        versionCode configVersions.versionCode
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"

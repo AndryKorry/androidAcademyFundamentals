@@ -34,6 +34,8 @@ android {
 }
 
 dependencies {
+    implementation project(':03_homework-fragment_detail_movie')
+    implementation project(':04_homework-fragment_movie_list')
 
     //kt
     implementation kotlin.kotlinCore

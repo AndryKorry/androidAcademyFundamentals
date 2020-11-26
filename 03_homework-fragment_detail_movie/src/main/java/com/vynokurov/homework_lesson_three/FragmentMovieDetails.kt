@@ -14,4 +14,7 @@ class FragmentMovieDetails : Fragment()  {
         savedInstanceState: Bundle?
     ): View? = inflater.inflate(R.layout.fragment_movie_details, container, false)
 
+    companion object {
+        fun newInstance() = FragmentMovieDetails()
+    }
 }

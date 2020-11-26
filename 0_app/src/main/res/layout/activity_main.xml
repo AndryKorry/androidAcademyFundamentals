@@ -27,10 +27,10 @@
         app:layout_constraintTop_toBottomOf="@id/lessonFirst" />
 
     <Button
-        android:id="@+id/openThirdHomework"
+        android:id="@+id/movieApp"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="@string/third_homework"
+        android:text="Movie application"
         android:layout_margin="@dimen/common_16dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
