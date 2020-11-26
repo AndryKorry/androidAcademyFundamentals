@@ -10,7 +10,7 @@ class MovieDetailsActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_movie_details)
+        setContentView(R.layout.fragment_movie_details)
         findViewById<TextView>(R.id.nameMovie).text = "Avengers:\nEnd Game"
     }
 
