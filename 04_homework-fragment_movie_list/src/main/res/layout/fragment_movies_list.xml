@@ -38,7 +38,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="248dp"
                 android:layout_margin="@dimen/common_2dp"
-                android:src="@drawable/bacground_gradient_mask"
+                android:src="@drawable/background_gradient_mask"
                 android:background="@drawable/background_movie"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"/>

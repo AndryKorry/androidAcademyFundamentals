@@ -77,50 +77,51 @@
 
         <ImageView
             android:id="@+id/star1"
-            android:layout_width="@dimen/size_18dp"
-            android:layout_height="@dimen/size_18dp"
-            android:layout_marginTop="@dimen/common_8dp"
-            android:src="@drawable/ic_star"
+            android:layout_width="@dimen/common_18dp"
+            android:layout_height="@dimen/common_18dp"
+            android:layout_marginStart="@dimen/common_3dp"
+            android:layout_marginLeft="@dimen/common_3dp"
+            android:src="@drawable/ic_star_icon"
             app:layout_constraintStart_toStartOf="@id/guidelineStart"
             app:layout_constraintTop_toBottomOf="@id/tag" />
 
         <ImageView
             android:id="@+id/star2"
-            android:layout_width="@dimen/size_18dp"
-            android:layout_height="@dimen/size_18dp"
-            android:layout_marginStart="@dimen/size_3dp"
-            android:layout_marginLeft="@dimen/size_3dp"
-            android:src="@drawable/ic_star"
+            android:layout_width="@dimen/common_18dp"
+            android:layout_height="@dimen/common_18dp"
+            android:layout_marginStart="@dimen/common_3dp"
+            android:layout_marginLeft="@dimen/common_3dp"
+            android:src="@drawable/ic_star_icon"
             app:layout_constraintStart_toEndOf="@id/star1"
             app:layout_constraintTop_toTopOf="@id/star1" />
 
         <ImageView
             android:id="@+id/star3"
-            android:layout_width="18dp"
-            android:layout_height="18dp"
-            android:layout_marginStart="3.25dp"
-            android:layout_marginLeft="3.25dp"
-            android:src="@drawable/ic_star"
+            android:layout_width="@dimen/common_18dp"
+            android:layout_height="@dimen/common_18dp"
+            android:layout_marginStart="@dimen/common_3dp"
+            android:layout_marginLeft="@dimen/common_3dp"
+            android:src="@drawable/ic_star_icon"
             app:layout_constraintStart_toEndOf="@id/star2"
             app:layout_constraintTop_toTopOf="@id/star2" />
 
         <ImageView
             android:id="@+id/star4"
-            android:layout_width="18dp"
-            android:layout_height="18dp"
-            android:layout_marginStart="3.25dp"
-            android:layout_marginLeft="3.25dp"
-            android:src="@drawable/ic_star"
+            android:layout_width="@dimen/common_18dp"
+            android:layout_height="@dimen/common_18dp"
+            android:layout_marginStart="@dimen/common_3dp"
+            android:layout_marginLeft="@dimen/common_3dp"
+            android:src="@drawable/ic_star_grey"
             app:layout_constraintStart_toEndOf="@id/star3"
             app:layout_constraintTop_toTopOf="@id/star3" />
 
         <ImageView
             android:id="@+id/star5"
-            android:layout_width="18dp"
-            android:layout_height="18dp"
-            android:layout_marginStart="3.25dp"
-            android:layout_marginLeft="3.25dp"
-            android:src="@drawable/ic_grey_star"
+            android:layout_width="@dimen/common_18dp"
+            android:layout_height="@dimen/common_18dp"
+            android:layout_marginStart="@dimen/common_3dp"
+            android:layout_marginLeft="@dimen/common_3dp"
+            android:src="@drawable/ic_star_grey"
             app:layout_constraintStart_toEndOf="@id/star4"
             app:layout_constraintTop_toTopOf="@id/star4" />
 
