@@ -11,23 +11,20 @@ import com.vynokurov.homework_lesson_three.FragmentMovieDetails
 class MainMovieActivity : AppCompatActivity(), FragmentMoviesList.TransactionsFragmentClicks,
     FragmentMovieDetails.BackPressedClick {
 
-    private var rootFragment =
-        FragmentMoviesList().apply { setClickListener(this@MainMovieActivity) }
+    private var detailFragment = FragmentMovieDetails().apply { setClickListener(this@MainMovieActivity) }
+    private var rootFragment = FragmentMoviesList().apply { setClickListener(this@MainMovieActivity) }
 
-    private var detailFragment =
-        FragmentMovieDetails().apply { setClickListener(this@MainMovieActivity) }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.general_movie_layout)
 
-        if (savedInstanceState == null) {
-            rootFragment.apply {
-                supportFragmentManager.beginTransaction()
-                    .add(R.id.mainContainer, rootFragment, FRAGMENT_LIST)
-                    .commit()
-            }
+        rootFragment.apply {
+            supportFragmentManager.beginTransaction()
+                .add(R.id.mainContainer, rootFragment, FRAGMENT_LIST)
+                .commit()
         }
+
     }
 
     override fun addFragment() {
