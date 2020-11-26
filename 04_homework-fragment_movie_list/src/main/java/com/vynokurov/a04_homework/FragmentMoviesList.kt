@@ -29,4 +29,5 @@ class FragmentMoviesList : Fragment()  {
     interface TransactionsFragmentClicks {
         fun addFragment()
     }
+
 }
