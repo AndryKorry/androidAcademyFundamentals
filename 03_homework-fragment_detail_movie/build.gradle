@@ -35,6 +35,8 @@ android {
 
 dependencies {
 
+    implementation project(':0_common')
+
     //kt
     implementation kotlin.kotlinCore
     implementation kotlin.coroutines
