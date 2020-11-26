@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#191926">
+
+    <TextView
+        android:id="@+id/positionBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="56dp"
+        android:drawableLeft="@drawable/ic_combined_shape"
+        android:drawablePadding="8dp"
+        android:text="Warszawa, Poland"
+        android:textColor="#FFFFFFFF"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/guidelineStart"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="170dp"
+        android:layout_height="296dp"
+        android:layout_marginTop="27dp"
+        app:cardCornerRadius="8dp"
+        android:background="@drawable/background_card"
+        app:layout_constraintStart_toStartOf="@id/guidelineStart"
+        app:layout_constraintTop_toBottomOf="@id/positionBtn">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/background"
+                android:layout_width="match_parent"
+                android:layout_height="248dp"
+                android:layout_margin="2dp"
+                android:src="@drawable/bacground_gradient_mask"
+                android:background="@drawable/background_movie"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <ImageView
+                android:id="@+id/like"
+                android:layout_width="16dp"
+                android:layout_height="14dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginEnd="6dp"
+                android:background="@drawable/ic_like"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <TextView
+                android:id="@+id/age"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="6dp"
+                android:text="13+"
+                android:textSize="12sp"
+                android:textColor="#FFFFFF"
+                android:fontFamily="@font/roboto"
+                android:gravity="center"
+                android:background="@drawable/background_corner"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <TextView
+                android:id="@+id/tag"
+                android:layout_width="0dp"
+                android:layout_height="12dp"
+                android:layout_marginBottom="22dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="14dp"
+                android:text="Action, Adventure, Drama"
+                android:textColor="#FF3466"
+                android:textSize="8sp"
+                app:layout_constraintBottom_toBottomOf="@id/background"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <ImageView
+                android:id="@+id/star1"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/ic_star"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tag" />
+
+            <ImageView
+                android:id="@+id/star2"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_marginStart="2dp"
+                android:src="@drawable/ic_star"
+                app:layout_constraintStart_toEndOf="@id/star1"
+                app:layout_constraintTop_toTopOf="@id/star1" />
+
+            <ImageView
+                android:id="@+id/star3"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_marginStart="2dp"
+                android:src="@drawable/ic_star"
+                app:layout_constraintStart_toEndOf="@id/star2"
+                app:layout_constraintTop_toTopOf="@id/star2" />
+
+            <ImageView
+                android:id="@+id/star4"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_marginStart="2dp"
+                android:src="@drawable/ic_star"
+                app:layout_constraintStart_toEndOf="@id/star3"
+                app:layout_constraintTop_toTopOf="@id/star3" />
+
+            <ImageView
+                android:id="@+id/star5"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_marginStart="2dp"
+                android:src="@drawable/ic_grey_star"
+                app:layout_constraintStart_toEndOf="@id/star4"
+                app:layout_constraintTop_toTopOf="@id/star4" />
+
+            <TextView
+                android:id="@+id/counter"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="2dp"
+                android:text="125 reviews"
+                android:textColor="#6D6D80"
+                android:textSize="8sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/tag"
+                app:layout_constraintStart_toEndOf="@id/star5" />
+
+
+            <TextView
+                android:id="@+id/nameMovie"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="8dp"
+                android:textColor="#FFFFFF"
+                android:fontFamily="@font/roboto"
+                android:text="Avengers: End Game"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/background" />
+
+            <TextView
+                android:id="@+id/timing"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:textColor="#565665"
+                android:fontFamily="@font/roboto"
+                android:text="137 MIN"
+                android:textSize="8sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/nameMovie" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="-130dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
