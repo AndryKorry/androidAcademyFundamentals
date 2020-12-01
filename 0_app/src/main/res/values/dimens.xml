@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="common_16dp">16dp</dimen>
 
     <dimen name="size_24sp">24sp</dimen>
     <dimen name="size_16sp">16sp</dimen>
@@ -9,9 +8,8 @@
     <dimen name="space_1x">4dp</dimen>
     <dimen name="space_2x">8dp</dimen>
     <dimen name="space_3x">12dp</dimen>
-    <dimen name="size_16dp">16dp</dimen>
     <dimen name="size_15dp">15dp</dimen>
-    <dimen name="size_24dp">24dp</dimen>
+    <dimen name="common_24dp">24dp</dimen>
 
     <!-- SolutionTwoScreen -->
     <dimen name="solution_two_bottom_menu_height">96dp</dimen>
@@ -22,7 +20,7 @@
     <dimen name="solution_three_title_height">64dp</dimen>
     <dimen name="size_64dp">64dp</dimen>
     <dimen name="size_96dp">96dp</dimen>
-    <dimen name="size_8dp">8dp</dimen>
+    <dimen name="common_8dp">8dp</dimen>
     <!-- SolutionThreeScreen -->
 
 </resources>

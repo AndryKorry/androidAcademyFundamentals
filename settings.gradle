@@ -1,5 +1,8 @@
-include ':03_homework-lesson-three'
-include ':03_workshop-lesson-three'
-include ':02_workshop-lesson-second',
-        ':0_app'
-rootProject.name = "BasicAndroidAcademy"
+include ':0_app',
+        ':0_movie_app',
+        ':0_common',
+        ':02_workshop-lesson-second',
+        ':03_workshop-lesson-three',
+        ':03_homework-fragment_detail_movie',
+        ':04_homework-fragment_movie_list'
+rootProject.name = "5_0_BasicAndroidAcademy"

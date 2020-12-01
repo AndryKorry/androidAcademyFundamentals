@@ -12,9 +12,12 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/02_workshop-lesson-second" />
-            <option value="$PROJECT_DIR$/03_homework-lesson-three" />
+            <option value="$PROJECT_DIR$/03_homework-fragment_detail_movie" />
             <option value="$PROJECT_DIR$/03_workshop-lesson-three" />
+            <option value="$PROJECT_DIR$/04_homework-fragment_movie_list" />
             <option value="$PROJECT_DIR$/0_app" />
+            <option value="$PROJECT_DIR$/0_common" />
+            <option value="$PROJECT_DIR$/0_movie_app" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
