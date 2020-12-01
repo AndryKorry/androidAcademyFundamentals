@@ -5,4 +5,4 @@ include ':0_app',
         ':03_workshop-lesson-three',
         ':03_homework-fragment_detail_movie',
         ':04_homework-fragment_movie_list'
-rootProject.name = "BasicAndroidAcademy"
+rootProject.name = "5_0_BasicAndroidAcademy"

@@ -8,27 +8,33 @@ import androidx.fragment.app.Fragment
 import com.vynokurov.a04_homework.FragmentMoviesList
 import com.vynokurov.homework_lesson_three.FragmentMovieDetails
 
-class MainMovieActivity : AppCompatActivity(), FragmentMoviesList.TransactionsFragmentClicks,
-    FragmentMovieDetails.BackPressedClick {
+class MainMovieActivity : AppCompatActivity(){
 
-    private var detailFragment = FragmentMovieDetails().apply { setClickListener(this@MainMovieActivity) }
-    private var rootFragment = FragmentMoviesList().apply { setClickListener(this@MainMovieActivity) }
+    private val detailFragment by lazy {FragmentMovieDetails().apply { setClickListener(backPressedCustom) }}
+    private val rootFragment by lazy {  FragmentMoviesList().apply { setClickListener(transactionListener) }}
 
+    private val transactionListener = object : FragmentMoviesList.TransactionsFragmentClicks{
+        override fun addFragment() {
+            replaceFragment(detailFragment, FRAGMENT_DETAIL)
+        }
+    }
+
+    private val backPressedCustom = object :  FragmentMovieDetails.BackPressedClick {
+        override fun backClick() {
+            onBackPressed()
+        }
+
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.general_movie_layout)
-
         rootFragment.apply {
             supportFragmentManager.beginTransaction()
                 .add(R.id.mainContainer, rootFragment, FRAGMENT_LIST)
                 .commit()
         }
 
-    }
-
-    override fun addFragment() {
-        replaceFragment(detailFragment, FRAGMENT_DETAIL)
     }
 
     private fun replaceFragment(fragment: Fragment, tag: String) {
@@ -47,10 +53,6 @@ class MainMovieActivity : AppCompatActivity(), FragmentMoviesList.TransactionsFr
         @JvmStatic
         fun newIntent(context: Context): Intent =
             Intent(context, MainMovieActivity::class.java)
-    }
-
-    override fun backClick() {
-        onBackPressed()
     }
 }
 
