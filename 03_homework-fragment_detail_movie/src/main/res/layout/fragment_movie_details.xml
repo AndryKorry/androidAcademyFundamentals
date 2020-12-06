@@ -177,103 +177,17 @@
             app:layout_constraintStart_toStartOf="@id/guidelineStart"
             app:layout_constraintTop_toBottomOf="@id/storyDescription" />
 
-        <TextView
-            android:id="@+id/actorOneAvatar"
-            android:layout_width="@dimen/size_80dp"
-            android:layout_height="@dimen/size_80dp"
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/actorsList"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/size_7dp"
-            android:layout_marginEnd="@dimen/common_8dp"
-            android:background="@drawable/ic_robert"
+            android:paddingBottom="@dimen/common_16dp"
+            android:orientation="horizontal"
             android:textColor="@color/colorMyGray"
-            app:layout_constraintHorizontal_chainStyle="packed"
-            app:layout_constraintLeft_toLeftOf="@id/guidelineStart"
-            app:layout_constraintRight_toLeftOf="@id/actorTwoAvatar"
+            app:layout_constraintStart_toStartOf="@id/guidelineStart"
+            app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
             app:layout_constraintTop_toBottomOf="@id/titleCast" />
-
-        <TextView
-            android:id="@+id/nameActorOne"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/common_6dp"
-            android:text="@string/robert_downey_jr"
-            android:textColor="@color/colorActorName"
-            android:textSize="@dimen/common_12sp"
-            app:layout_constraintEnd_toEndOf="@+id/actorOneAvatar"
-            app:layout_constraintHorizontal_chainStyle="spread"
-            app:layout_constraintLeft_toLeftOf="@id/actorOneAvatar"
-            app:layout_constraintRight_toRightOf="@id/actorOneAvatar"
-            app:layout_constraintStart_toStartOf="@+id/actorOneAvatar"
-            app:layout_constraintTop_toBottomOf="@id/actorOneAvatar" />
-
-        <TextView
-            android:id="@+id/actorTwoAvatar"
-            android:layout_width="@dimen/size_80dp"
-            android:layout_height="@dimen/size_80dp"
-            android:layout_marginEnd="@dimen/common_8dp"
-            android:background="@drawable/ic_evans"
-            android:textColor="@color/colorMyGray"
-            app:layout_constraintBottom_toBottomOf="@id/actorOneAvatar"
-            app:layout_constraintLeft_toRightOf="@+id/actorOneAvatar"
-            app:layout_constraintRight_toLeftOf="@id/actorThreeAvatar" />
-
-        <TextView
-            android:id="@+id/nameActorTwo"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/common_6dp"
-            android:text="@string/chris_evans"
-            android:textColor="@color/colorActorName"
-            android:textSize="@dimen/common_12sp"
-            app:layout_constraintHorizontal_chainStyle="spread"
-            app:layout_constraintLeft_toLeftOf="@id/actorTwoAvatar"
-            app:layout_constraintRight_toRightOf="@id/actorTwoAvatar"
-            app:layout_constraintTop_toBottomOf="@id/actorOneAvatar" />
-
-        <TextView
-            android:id="@+id/actorThreeAvatar"
-            android:layout_width="@dimen/size_80dp"
-            android:layout_height="@dimen/size_80dp"
-            android:layout_marginEnd="@dimen/common_8dp"
-            android:background="@drawable/ic_ruffalo"
-            app:layout_constraintBottom_toBottomOf="@id/actorOneAvatar"
-            app:layout_constraintLeft_toRightOf="@+id/actorTwoAvatar"
-            app:layout_constraintRight_toLeftOf="@id/actorFourthAvatar" />
-
-        <TextView
-            android:id="@+id/nameActorThree"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/common_6dp"
-            android:text="@string/mark_ruffalo"
-            android:textColor="@color/colorActorName"
-            android:textSize="@dimen/common_12sp"
-            app:layout_constraintHorizontal_chainStyle="spread"
-            app:layout_constraintLeft_toLeftOf="@id/actorThreeAvatar"
-            app:layout_constraintRight_toRightOf="@id/actorThreeAvatar"
-            app:layout_constraintTop_toBottomOf="@id/actorThreeAvatar" />
-
-        <TextView
-            android:id="@+id/actorFourthAvatar"
-            android:layout_width="@dimen/size_80dp"
-            android:layout_height="@dimen/size_80dp"
-            android:layout_marginLeft="@dimen/common_8dp"
-            android:background="@drawable/ic_hemsworth"
-            app:layout_constraintBottom_toBottomOf="@id/actorOneAvatar"
-            app:layout_constraintLeft_toRightOf="@+id/actorThreeAvatar" />
-
-        <TextView
-            android:id="@+id/nameActorFour"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/common_6dp"
-            android:layout_marginBottom="@dimen/common_24dp"
-            android:text="@string/chris_hemsworth"
-            android:textColor="@color/colorActorName"
-            android:textSize="@dimen/common_12sp"
-            app:layout_constraintHorizontal_chainStyle="spread"
-            app:layout_constraintLeft_toLeftOf="@id/actorFourthAvatar"
-            app:layout_constraintRight_toRightOf="@id/actorFourthAvatar"
-            app:layout_constraintTop_toBottomOf="@id/actorFourthAvatar" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guidelineStart"

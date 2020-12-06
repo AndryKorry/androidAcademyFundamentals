@@ -16,7 +16,7 @@ class MainMovieActivity : AppCompatActivity(){
 
     private val transactionListener = object : FragmentMoviesList.TransactionsFragmentClicks{
         override fun addFragment(movie: MovieEntity) {
-            replaceFragment(detailFragment, FRAGMENT_DETAIL)
+            replaceFragment(movie, detailFragment, FRAGMENT_DETAIL)
         }
     }
 
@@ -36,7 +36,7 @@ class MainMovieActivity : AppCompatActivity(){
         }
     }
 
-    private fun replaceFragment(fragment: Fragment, tag: String) {
+    private fun replaceFragment(movie: MovieEntity, fragment: Fragment, tag: String) {
         supportFragmentManager.beginTransaction()
             .apply {
                 replace(R.id.mainContainer, fragment, tag)
