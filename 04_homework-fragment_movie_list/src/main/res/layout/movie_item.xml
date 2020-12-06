@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/cardMovie"
-    android:layout_width="170dp"
+    android:layout_width="164dp"
     android:layout_height="296dp"
+    android:layout_marginBottom="@dimen/common_12dp"
     android:background="@color/colorTransparent"
     app:cardCornerRadius="@dimen/common_8dp">
 
@@ -13,9 +15,9 @@
         android:background="@drawable/background_card">
 
         <ImageView
-            android:id="@+id/background"
+            android:id="@+id/backgroundMovie"
             android:layout_width="match_parent"
-            android:layout_height="248dp"
+            android:layout_height="238dp"
             android:layout_margin="@dimen/common_2dp"
             android:background="@drawable/background_movie"
             android:src="@drawable/background_gradient_mask"
@@ -28,7 +30,7 @@
             android:layout_height="@dimen/common_14dp"
             android:layout_marginTop="@dimen/common_13dp"
             android:layout_marginEnd="@dimen/common_6dp"
-            android:background="@drawable/ic_like"
+            android:background="@drawable/ic_non_like"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -41,14 +43,14 @@
             android:background="@drawable/background_corner"
             android:fontFamily="@font/roboto"
             android:gravity="center"
-            android:text="13+"
+            tools:text="13+"
             android:textColor="@color/commonColorWhite"
-            android:textSize="@dimen/common_12sp"
+            android:textSize="@dimen/common_8sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/tag"
+            android:id="@+id/tagMovie"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/common_8dp"
@@ -57,7 +59,7 @@
             android:text="Action, Adventure, Drama"
             android:textColor="@color/color_tag"
             android:textSize="@dimen/common_8sp"
-            app:layout_constraintBottom_toBottomOf="@id/background"
+            app:layout_constraintBottom_toBottomOf="@id/backgroundMovie"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
@@ -70,7 +72,7 @@
             android:layout_marginBottom="@dimen/common_10dp"
             android:src="@drawable/ic_star_icon"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tag" />
+            app:layout_constraintTop_toBottomOf="@id/tagMovie" />
 
         <ImageView
             android:id="@+id/star2"
@@ -109,24 +111,24 @@
             app:layout_constraintTop_toTopOf="@id/star4" />
 
         <TextView
-            android:id="@+id/counter"
+            android:id="@+id/reviewersCounter"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/common_6dp"
             android:layout_marginTop="@dimen/common_2dp"
-            android:text="125 reviews"
+            tools:text="125 reviews"
             android:textColor="@color/commonColorBack"
             android:textSize="@dimen/common_8sp"
             android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@id/star5"
-            app:layout_constraintTop_toBottomOf="@id/tag" />
+            app:layout_constraintTop_toBottomOf="@id/tagMovie" />
 
 
         <TextView
             android:id="@+id/nameMovie"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/common_8dp"
+            android:layout_marginStart="@dimen/common_8dp"
             android:layout_marginTop="@dimen/common_8dp"
             android:layout_marginEnd="@dimen/common_8dp"
             android:fontFamily="@font/roboto"
@@ -135,13 +137,12 @@
             android:textSize="@dimen/common_14sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/background" />
+            app:layout_constraintTop_toBottomOf="@id/backgroundMovie" />
 
         <TextView
             android:id="@+id/timing"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/common_8dp"
             android:layout_marginEnd="@dimen/common_8dp"
             android:layout_marginBottom="@dimen/common_8dp"
             android:fontFamily="@font/roboto"
@@ -149,7 +150,7 @@
             android:textColor="@color/color_time"
             android:textSize="@dimen/common_8sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintStart_toStartOf="@id/nameMovie"
             app:layout_constraintTop_toBottomOf="@id/nameMovie" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>

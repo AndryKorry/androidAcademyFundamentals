@@ -5,7 +5,8 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
-import com.vynokurov.a04_homework.FragmentMoviesList
+import com.vynokurov.a04_homework.data.MovieEntity
+import com.vynokurov.a04_homework.ui.FragmentMoviesList
 import com.vynokurov.homework_lesson_three.FragmentMovieDetails
 
 class MainMovieActivity : AppCompatActivity(){
@@ -14,7 +15,7 @@ class MainMovieActivity : AppCompatActivity(){
     private val rootFragment by lazy {  FragmentMoviesList().apply { setClickListener(transactionListener) }}
 
     private val transactionListener = object : FragmentMoviesList.TransactionsFragmentClicks{
-        override fun addFragment() {
+        override fun addFragment(movie: MovieEntity) {
             replaceFragment(detailFragment, FRAGMENT_DETAIL)
         }
     }
@@ -23,7 +24,6 @@ class MainMovieActivity : AppCompatActivity(){
         override fun backClick() {
             onBackPressed()
         }
-
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -34,7 +34,6 @@ class MainMovieActivity : AppCompatActivity(){
                 .add(R.id.mainContainer, rootFragment, FRAGMENT_LIST)
                 .commit()
         }
-
     }
 
     private fun replaceFragment(fragment: Fragment, tag: String) {
