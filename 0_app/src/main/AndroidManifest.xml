@@ -9,17 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MainApp">
-        <activity android:name="com.vynokurov.academyBasic.MainActivity">
+        <activity android:name="com.vynokurov.academyBasic.MainMovieActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.vynokurov.step_first_lesson.FirstStepActivity"/>
-        <activity android:name="com.vynokurov.step_first_lesson.SecondActivity"/>
-        <activity android:name="com.vynokurov.workshop_lesson_three.LessonThreeActivity"/>
-        <activity android:name="com.vynokurov.a0_movie_app.MainMovieActivity"/>
     </application>
 
 </manifest>

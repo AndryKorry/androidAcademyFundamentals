@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name" translatable="false">Modules Fundamentals</string>
+    <string name="app_name" translatable="false">MoviES</string>
     <string name="open_first_lesson" translatable="false">Open First Lesson</string>
     <string name="second_lesson" translatable="false">Second Lesson</string>
 
