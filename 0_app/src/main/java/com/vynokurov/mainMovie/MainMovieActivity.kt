@@ -1,20 +1,21 @@
-package com.vynokurov.academyBasic
+package com.vynokurov.mainMovie
 
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
-import com.vynokurov.a04_homework.FragmentMoviesList
-import com.vynokurov.homework_lesson_three.FragmentMovieDetails
+import com.vynokurov.movie.data.MovieEntity
+import com.vynokurov.movie.ui.FragmentMoviesList
+import com.vynokurov.movieDetail.FragmentMovieDetails
 
 class MainMovieActivity : AppCompatActivity() {
     private val detailFragment by lazy { FragmentMovieDetails().apply { setClickListener(backPressedCustom) }}
     private val rootFragment by lazy {  FragmentMoviesList().apply { setClickListener(transactionListener) }}
 
     private val transactionListener = object : FragmentMoviesList.TransactionsFragmentClicks{
-        override fun addFragment() {
-            replaceFragment(detailFragment, FRAGMENT_DETAIL)
+        override fun addFragment(movie: MovieEntity) {
+            replaceFragment(movie, detailFragment, FRAGMENT_DETAIL)
         }
     }
 
@@ -32,10 +33,9 @@ class MainMovieActivity : AppCompatActivity() {
                 .add(R.id.mainContainer, rootFragment, FRAGMENT_LIST)
                 .commit()
         }
-
     }
 
-    private fun replaceFragment(fragment: Fragment, tag: String) {
+    private fun replaceFragment(movie: MovieEntity, fragment: Fragment, tag: String) {
         supportFragmentManager.beginTransaction()
             .apply {
                 replace(R.id.mainContainer, fragment, tag)

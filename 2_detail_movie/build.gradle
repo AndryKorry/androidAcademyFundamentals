@@ -50,7 +50,4 @@ dependencies {
     implementation androidx.constrainLayout
     implementation google.material
 
-    implementation android.supportAppCompat
-    implementation android.supportRecycler
-
 }

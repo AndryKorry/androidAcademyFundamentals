@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="reviewers_counter">%s counter</string>
+    <string name="duration">%s min</string>
+    <string name="age_restrictions">%s \+</string>
+
+</resources>

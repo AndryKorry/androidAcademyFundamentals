@@ -9,7 +9,7 @@ android {
     buildToolsVersion "29.0.3"
 
     defaultConfig {
-        applicationId "com.vynokurov.homemainactivity"
+        applicationId "com.vynokurov.mainMovie"
         minSdkVersion configVersions.minSdk
         targetSdkVersion configVersions.targetSdk
         versionCode configVersions.versionCode
@@ -50,5 +50,8 @@ dependencies {
     implementation androidx.activityKtx
     implementation androidx.fragmentKtx
     implementation androidx.constrainLayout
+
+    implementation android.supportAppCompat
+    implementation android.supportRecycler
 
 }
