@@ -1,16 +1,16 @@
-package com.vynokurov.a04_homework.ui
+package com.vynokurov.movie.ui
 
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
-import com.vynokurov.a04_homework.R
-import com.vynokurov.a04_homework.data.MovieEntity
-import com.vynokurov.a04_homework.domain.MoviesDataSource
-import kotlinx.android.synthetic.main.fragment_movies_list.*
+import com.vynokurov.movie.R
+import com.vynokurov.movie.data.MovieEntity
+import com.vynokurov.movie.domain.MoviesDataSource
+import kotlinx.android.synthetic.main.fragment_movies_list.listMovies
 
 class FragmentMoviesList : Fragment(R.layout.fragment_movies_list),
-    MoviesAdapter.Listener {
+    MoviesListAdapter.MoviesListener {
 
     private var listener: TransactionsFragmentClicks? = null
 
@@ -21,7 +21,7 @@ class FragmentMoviesList : Fragment(R.layout.fragment_movies_list),
 
     private fun initRecyclerView(users: List<MovieEntity>) {
         listMovies.layoutManager = GridLayoutManager(requireContext(), 2)
-        listMovies.adapter = MoviesAdapter(requireContext(), users, this)
+        listMovies.adapter = MoviesListAdapter(requireContext(), users, this)
     }
 
     fun setClickListener(l: TransactionsFragmentClicks) {

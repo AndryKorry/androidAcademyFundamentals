@@ -1,13 +1,13 @@
-package com.vynokurov.academyBasic
+package com.vynokurov.mainMovie
 
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
-import com.vynokurov.a04_homework.data.MovieEntity
-import com.vynokurov.a04_homework.ui.FragmentMoviesList
-import com.vynokurov.homework_lesson_three.FragmentMovieDetails
+import com.vynokurov.movie.data.MovieEntity
+import com.vynokurov.movie.ui.FragmentMoviesList
+import com.vynokurov.movieDetail.FragmentMovieDetails
 
 class MainMovieActivity : AppCompatActivity() {
     private val detailFragment by lazy { FragmentMovieDetails().apply { setClickListener(backPressedCustom) }}

@@ -1,7 +1,7 @@
-package com.vynokurov.homework_lesson_three.domain
+package com.vynokurov.movieDetail.domain
 
-import com.vynokurov.homework_lesson_three.R
-import com.vynokurov.homework_lesson_three.data.ActorEntity
+import com.vynokurov.movieDetail.R
+import com.vynokurov.movieDetail.data.ActorEntity
 
 class ActorsDataSource {
     fun getActors(): List<ActorEntity> {

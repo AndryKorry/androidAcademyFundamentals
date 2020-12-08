@@ -1,4 +1,4 @@
-package com.vynokurov.homework_lesson_three.data
+package com.vynokurov.movieDetail.data
 
 data class ActorEntity(
     val name: String,

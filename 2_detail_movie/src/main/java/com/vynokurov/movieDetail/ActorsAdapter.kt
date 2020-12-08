@@ -1,4 +1,4 @@
-package com.vynokurov.homework_lesson_three
+package com.vynokurov.movieDetail
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -6,9 +6,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
-import com.vynokurov.homework_lesson_three.data.ActorEntity
+import com.vynokurov.movieDetail.data.ActorEntity
 import kotlinx.android.synthetic.main.actor_item.view.*
-import kotlinx.android.synthetic.main.fragment_movie_details.view.*
 
 class ActorsAdapter(
     private val context: Context,

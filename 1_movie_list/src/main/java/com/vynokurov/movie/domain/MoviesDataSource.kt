@@ -1,7 +1,7 @@
-package com.vynokurov.a04_homework.domain
+package com.vynokurov.movie.domain
 
-import com.vynokurov.a04_homework.R
-import com.vynokurov.a04_homework.data.MovieEntity
+import com.vynokurov.movie.R
+import com.vynokurov.movie.data.MovieEntity
 
 
 class MoviesDataSource {

@@ -27,8 +27,7 @@ ext {
             threetenabp    : "1.2.4",
             timber         : "4.7.1",
             room           : "2.2.5",
-            signature      : "1.2.1",
-            scanner        : "7.0.0",
+            supportRecycler: "25.0.0"
     ]
 
     androidx = [
@@ -45,6 +44,7 @@ ext {
             roomRuntime        : "androidx.room:room-runtime:${versions.room}",
             roomKtx            : "androidx.room:room-ktx:${versions.room}",
             roomCompiler       : "androidx.room:room-compiler:${versions.room}"
+
     ]
 
     kotlin = [
@@ -61,6 +61,11 @@ ext {
             daggerAndroidProcessor: "com.google.dagger:dagger-android-processor:${versions.dagger}",
             gson                  : "com.google.code.gson:gson:${versions.gson}",
             zxingBarcode          : "com.google.zxing:core:${versions.barcode}"
+    ]
+    android = [
+
+            supportAppCompat: "com.android.support:appcompat-v7:${versions.supportRecycler}",
+            supportRecycler: "com.android.support:recyclerview-v7:${versions.supportRecycler}"
     ]
 
     firebase = [
